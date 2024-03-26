@@ -25,14 +25,14 @@ def render_interface(chance):
     if chance > 0:
         print(f"Você tem {chance} chances" if chance > 1 else f"Você tem {chance} chance")
     print('_Forca_')
-    print('  ____'if chance <= 5 else '|')
-    print('  |  |'if chance <= 5 else ' |')
+    print('  ____')
+    print('  |  |')
     print('  |  |'if chance <= 4 else '  |')
     print('  |  O' if chance <= 3 else '  |')
     print('  | /|\\' if chance <= 2 else '  |')
     print('  |  |' if chance <= 1 else '  |')
     print('  | / \\' if chance <= 0 else '  |')
-    print('__|__'if chance <= 5 else '')
+    print('__|__')
     word_key_formated = ' '.join(word_key)
     print(word_key_formated)
     
